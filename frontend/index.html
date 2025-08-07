@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Header -->
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications-education">Certifications & Education</a></li>
+                <li><a href="#get-in-touch">Get in Touch</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" data-aos="fade-up">
+        <h1>HELLO, I AM PREET</h1>
+        <p>A passionate developer building impactful web applications.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" data-aos="fade-right">
+        <div class="section-box">
+            <h2>About Me</h2>
+            <p>
+               Hi there! I'm a third-year IT student with a passion for turning complex ideas into functional, impactful solutions. 
+               My toolkit spans machine learning, data science, and web development, allowing me to handle projects from data analysis 
+               to deployment. I thrive on the creative challenge of building systems that not only solve problems but also delight users. 
+               Whether I'm building a predictive model or designing a clean web interface, my goal is always the same: to create something 
+               that matters. I'm always looking for my next challenge and am eager to collaborate on projects that make a real difference 
+               in the world.
+            </p>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+            <section id="resume" data-aos="fade-up">
+                <div class="section-box">
+                    <h2>Resume</h2>
+                    <p>View my resume for detailed information about my skills and experience.</p>
+                    <a href="files/PreetKothadiaResume.pdf" class="btn" target="_blank">View Resume</a>
+                </div>
+            </section>
+    <!-- Skills Section -->
+    <section id="skills" data-aos="fade-up">
+        <div class="section-box">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Data Science</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section (Empty Placeholder) -->
+    <section id="projects" data-aos="fade-up">
+        <div class="section-box">
+            <h2>Projects</h2>
+            <p>Projects will be added soon.</p>
+        </div>
+    </section>
+
+    <!-- Certifications & Education (Shared Background) -->
+    <section id="certifications-education" data-aos="fade-up">
+        <div class="section-box shared-box">
+            <div class="two-column">
+                <!-- Certifications -->
+                <div class="certifications">
+                    <h2>Certifications</h2>
+                    <div class="cert-card">
+                        <h3>Python Bootcamp</h3>
+                        <p>Coursera - 2025</p>
+                    </div>
+                    <div class="cert-card">
+                        <h3>Data Visualization</h3>
+                        <p>FreeCodeCamp - 2025</p>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="education">
+                    <h2>Education</h2>
+                    <div class="edu-card">
+                        <h3>Bachelor of Engineering in Information Technology</h3>
+                        <p>Sal College Of Engineering - 2023–2027</p>
+                    </div>
+                    <div class="edu-card">
+                        <h3>Higher Secondary Education</h3>
+                        <p>Shree Narayana Guru Vidhyalaya (SNGV) - 2022–2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get in Touch Section -->
+    <section id="get-in-touch" data-aos="fade-up">
+        <div class="section-box">
+            <h2>Get in Touch</h2>
+            <p>Have a project in mind or just want to say hi? I'd love to hear from you.</p>
+            <div class="social-icons">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=preetkothadia111@gmail.com" target="_blank" class="social-icon">
+                <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/preet-kothadia-3089a4342/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/okpreet" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+         <p>"Code is like humor. When you have to explain it, it’s bad."</p>
+         <p>📍 Based in Ahmedabad, India | Open to Remote/On-site Opportunities</p>
+    </footer>
+
+
+    <!-- AOS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true
+      });
+    </script>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script>
+        particlesJS("particles-js", {
+          "particles": {
+            "number": { "value": 60, "density": { "enable": true, "value_area": 800 } },
+            "color": { "value": "#777" },
+            "shape": { "type": "line" },
+            "opacity": { "value": 0.3 },
+            "size": { "value": 1.2 },
+            "line_linked": { "enable": true, "distance": 120, "color": "#777", "opacity": 0.6, "width": 1 },
+            "move": { "enable": true, "speed": 0.25 }
+          },
+          "interactivity": { "events": { "onhover": { "enable": false } } },
+          "retina_detect": true
+        });
+    </script>
+</body>
+</html>

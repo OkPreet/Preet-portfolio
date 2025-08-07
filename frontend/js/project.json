@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Portfolio Website",
+    "description": "A personal portfolio built with HTML, CSS, and JS.",
+    "link": "https://example.com"
+  },
+  {
+    "title": "Todo App",
+    "description": "A simple task manager app.",
+    "link": "https://example.com"
+  }
+]
