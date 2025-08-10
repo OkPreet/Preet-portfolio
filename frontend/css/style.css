@@ -5,13 +5,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0d0d0d;
+    background-color: #0d0d0d; /* Black main background */
     color: #fff;
-    line-height: 1.7;
-    overflow-x: hidden;
-    font-size: 1.05rem;
+    line-height: 1.7; /* Slightly increased for readability */
+    overflow-x: hidden; /* Prevent horizontal scrolling on mobile */
+    font-size: 1.05rem; /* Slightly bigger default text */
 }
 
+/* Particle Background Layer */
 #particles-js {
     position: fixed;
     top: 0;
@@ -39,7 +40,7 @@ header h1 {
     margin: 0;
     font-size: 2rem;
     font-weight: bold;
-    color: #00e0ff;
+    color: #00e0ff; /* Same bright cyan as headings */
 }
 
 header nav ul {
@@ -51,14 +52,14 @@ header nav ul {
 }
 
 header nav ul li a {
-    color: #00e0ff;
+    color: #00e0ff; /* Same cyan color */
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    color: #ffffff;
+    color: #ffffff; /* White on hover for contrast */
 }
 
 /* ================================
@@ -79,12 +80,14 @@ section {
     text-align: center;
 }
 
+/* Add space between sections */
 section + section {
     margin-top: 2rem;
 }
 
+/* Section Headings */
 h2 {
-    color: #00e0ff;
+    color: #00e0ff; /* Bright cyan for headings */
     margin-bottom: 1rem;
     font-size: 2.4rem;
     letter-spacing: 1px;
@@ -104,7 +107,7 @@ h2 {
 
 #hero h1 {
     margin-bottom: 0.5rem;
-    font-size: 3rem;
+    font-size: 3rem; /* Larger intro heading */
     font-weight: bold;
 }
 
@@ -118,7 +121,7 @@ h2 {
 ================================ */
 #about p {
     text-align: justify;
-    font-size: 1.1rem;
+    font-size: 1.1rem; /* Slightly larger body text */
 }
 
 /* ================================
@@ -159,7 +162,7 @@ h2 {
 }
 
 /* ================================
-    Certifications & Education (Shared Background)
+    Certifications & Education
 ================================ */
 .shared-box {
     background: rgba(50, 50, 50, 0.85);
@@ -228,7 +231,6 @@ footer {
     font-size: 1rem;
 }
 
-
 /* ================================
     Mobile Responsive Design
 ================================ */
@@ -236,11 +238,18 @@ footer {
     /* Header - Stack items vertically */
     header {
         flex-direction: column;
-        padding: 1rem 1rem;
+        padding: 1rem; /* Use a smaller, consistent padding */
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+        text-align: center;
+        margin-bottom: 0.5rem; /* Add a small margin to separate from the nav */
     }
 
     header nav {
         margin-top: 1rem;
+        width: 100%; /* Ensure nav container takes up full width */
     }
 
     header nav ul {
