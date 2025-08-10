@@ -1,18 +1,17 @@
 /* ================================
-   General Styles
+    General Styles
 ================================ */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0d0d0d; /* Black main background */
+    background-color: #0d0d0d;
     color: #fff;
-    line-height: 1.7; /* Slightly increased for readability */
+    line-height: 1.7;
     overflow-x: hidden;
-    font-size: 1.05rem; /* Slightly bigger default text */
+    font-size: 1.05rem;
 }
 
-/* Particle Background Layer */
 #particles-js {
     position: fixed;
     top: 0;
@@ -23,7 +22,7 @@ body {
 }
 
 /* ================================
-   Header
+    Header
 ================================ */
 header {
     display: flex;
@@ -40,6 +39,7 @@ header h1 {
     margin: 0;
     font-size: 2rem;
     font-weight: bold;
+    color: #00e0ff;
 }
 
 header nav ul {
@@ -51,18 +51,18 @@ header nav ul {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #00e0ff;
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    color: #aaa;
+    color: #ffffff;
 }
 
 /* ================================
-   Section Wrapper
+    Section Wrapper
 ================================ */
 section {
     padding: 5rem 2rem;
@@ -79,41 +79,19 @@ section {
     text-align: center;
 }
 
-/* Add space between sections */
 section + section {
     margin-top: 2rem;
 }
 
-/* Section Headings */
-/* Section Heading Color (Impactful Cyan) */
 h2 {
-    color: #00e0ff; /* Bright cyan for headings */
+    color: #00e0ff;
     margin-bottom: 1rem;
     font-size: 2.4rem;
     letter-spacing: 1px;
 }
 
-/* Navbar Title and Links Same Color */
-header h1 {
-    color: #00e0ff; /* Same bright cyan as headings */
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-header nav ul li a {
-    color: #00e0ff; /* Same cyan color */
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-header nav ul li a:hover {
-    color: #ffffff; /* White on hover for contrast */
-}
-
-
 /* ================================
-   Hero Section
+    Hero Section
 ================================ */
 #hero {
     text-align: center;
@@ -126,7 +104,7 @@ header nav ul li a:hover {
 
 #hero h1 {
     margin-bottom: 0.5rem;
-    font-size: 3rem; /* Larger intro heading */
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -136,15 +114,15 @@ header nav ul li a:hover {
 }
 
 /* ================================
-   About Section
+    About Section
 ================================ */
 #about p {
     text-align: justify;
-    font-size: 1.1rem; /* Slightly larger body text */
+    font-size: 1.1rem;
 }
 
 /* ================================
-   Resume Button
+    Resume Button
 ================================ */
 .btn {
     display: inline-block;
@@ -163,7 +141,7 @@ header nav ul li a:hover {
 }
 
 /* ================================
-   Skills
+    Skills
 ================================ */
 .skills-container {
     display: flex;
@@ -181,7 +159,7 @@ header nav ul li a:hover {
 }
 
 /* ================================
-   Certifications & Education (Shared Background)
+    Certifications & Education (Shared Background)
 ================================ */
 .shared-box {
     background: rgba(50, 50, 50, 0.85);
@@ -191,7 +169,6 @@ header nav ul li a:hover {
     width: 100%;
 }
 
-/* Side-by-side layout */
 .two-column {
     display: flex;
     gap: 2rem;
@@ -205,7 +182,6 @@ header nav ul li a:hover {
     text-align: left;
 }
 
-/* Cards Styling Inside */
 .cert-card,
 .edu-card {
     background-color: rgba(70, 70, 70, 0.85);
@@ -216,7 +192,7 @@ header nav ul li a:hover {
 }
 
 /* ================================
-   Get in Touch Section
+    Get in Touch Section
 ================================ */
 #get-in-touch p {
     margin-bottom: 1rem;
@@ -243,7 +219,7 @@ header nav ul li a:hover {
 }
 
 /* ================================
-   Footer
+    Footer
 ================================ */
 footer {
     text-align: center;
@@ -252,23 +228,82 @@ footer {
     font-size: 1rem;
 }
 
+
 /* ================================
-   Responsive Design
+    Mobile Responsive Design
 ================================ */
 @media (max-width: 768px) {
-    .two-column {
+    /* Header - Stack items vertically */
+    header {
         flex-direction: column;
+        padding: 1rem 1rem;
     }
 
-    header h1 {
-        font-size: 1.6rem;
+    header nav {
+        margin-top: 1rem;
     }
 
-    header nav ul li a {
-        font-size: 0.95rem;
+    header nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
     }
 
+    /* Hero Section - Reduce font size */
+    #hero {
+        padding-top: 5rem;
+    }
+
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero p {
+        font-size: 1.1rem;
+    }
+
+    /* General Section Box */
+    section {
+        padding: 2rem 1rem; /* Less padding on smaller screens */
+    }
+
+    .section-box {
+        padding: 1.5rem;
+        max-width: 100%;
+    }
+
+    /* Heading Sizes */
     h2 {
-        font-size: 2rem; /* Slightly smaller for mobile */
+        font-size: 2rem;
+    }
+
+    /* About Section */
+    #about p {
+        font-size: 1rem;
+    }
+
+    /* Skills - smaller tags */
+    .skills-container {
+        gap: 0.5rem;
+    }
+
+    .skill-tag {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Certifications & Education */
+    .two-column {
+        flex-direction: column; /* Stack columns on top of each other */
+        gap: 1rem;
+    }
+
+    .two-column > div {
+        min-width: unset; /* Remove min-width to allow full width */
+    }
+
+    /* Footer */
+    footer p {
+        padding: 0 1rem;
     }
 }
