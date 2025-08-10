@@ -1,15 +1,16 @@
 /* ================================
     General Styles
 ================================ */
-body {
+html, body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #0d0d0d; /* Black main background */
     color: #fff;
     line-height: 1.7; /* Slightly increased for readability */
-    overflow-x: hidden; /* Prevent horizontal scrolling on mobile */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
     font-size: 1.05rem; /* Slightly bigger default text */
+    max-width: 100%;
 }
 
 /* Particle Background Layer */
@@ -34,6 +35,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    flex-wrap: wrap; /* Allow wrapping if needed */
 }
 
 header h1 {
@@ -49,17 +51,19 @@ header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap; /* Wrap nav items on smaller screens */
+    justify-content: center;
 }
 
 header nav ul li a {
-    color: #00e0ff; /* Same cyan color */
+    color: #00e0ff;
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    color: #ffffff; /* White on hover for contrast */
+    color: #ffffff;
 }
 
 /* ================================
@@ -80,14 +84,12 @@ section {
     text-align: center;
 }
 
-/* Add space between sections */
 section + section {
     margin-top: 2rem;
 }
 
-/* Section Headings */
 h2 {
-    color: #00e0ff; /* Bright cyan for headings */
+    color: #00e0ff;
     margin-bottom: 1rem;
     font-size: 2.4rem;
     letter-spacing: 1px;
@@ -107,7 +109,7 @@ h2 {
 
 #hero h1 {
     margin-bottom: 0.5rem;
-    font-size: 3rem; /* Larger intro heading */
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -121,7 +123,7 @@ h2 {
 ================================ */
 #about p {
     text-align: justify;
-    font-size: 1.1rem; /* Slightly larger body text */
+    font-size: 1.1rem;
 }
 
 /* ================================
@@ -175,14 +177,14 @@ h2 {
 .two-column {
     display: flex;
     gap: 2rem;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .two-column > div {
     flex: 1;
     min-width: 300px;
-    text-align: left;
+    text-align: center;
 }
 
 .cert-card,
@@ -235,30 +237,28 @@ footer {
     Mobile Responsive Design
 ================================ */
 @media (max-width: 768px) {
-    /* Header - Stack items vertically */
+    /* Keep header items in row but allow wrapping */
     header {
-        flex-direction: column;
-        padding: 1rem; /* Use a smaller, consistent padding */
+        flex-direction: row;
+        justify-content: center;
     }
 
     header h1 {
         font-size: 1.6rem;
         text-align: center;
-        margin-bottom: 0.5rem; /* Add a small margin to separate from the nav */
-    }
-
-    header nav {
-        margin-top: 1rem;
-        width: 100%; /* Ensure nav container takes up full width */
+        margin-bottom: 0.5rem;
     }
 
     header nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    /* Hero Section - Reduce font size */
+    header nav ul li a {
+        font-size: 0.95rem;
+    }
+
     #hero {
         padding-top: 5rem;
     }
@@ -271,27 +271,24 @@ footer {
         font-size: 1.1rem;
     }
 
-    /* General Section Box */
     section {
-        padding: 2rem 1rem; /* Less padding on smaller screens */
+        padding: 2rem 1rem;
     }
 
     .section-box {
         padding: 1.5rem;
+        margin: 0 auto;
         max-width: 100%;
     }
 
-    /* Heading Sizes */
     h2 {
         font-size: 2rem;
     }
 
-    /* About Section */
     #about p {
         font-size: 1rem;
     }
 
-    /* Skills - smaller tags */
     .skills-container {
         gap: 0.5rem;
     }
@@ -301,17 +298,16 @@ footer {
         font-size: 0.9rem;
     }
 
-    /* Certifications & Education */
     .two-column {
-        flex-direction: column; /* Stack columns on top of each other */
+        justify-content: center;
         gap: 1rem;
     }
 
     .two-column > div {
-        min-width: unset; /* Remove min-width to allow full width */
+        min-width: 280px;
+        text-align: center;
     }
 
-    /* Footer */
     footer p {
         padding: 0 1rem;
     }
