@@ -1,4 +1,3 @@
-// Initialize Particles.js and set up hamburger toggle after DOM content is loaded
 document.addEventListener("DOMContentLoaded", () => {
   // Initialize particles.js
   particlesJS("particles-js", {
@@ -13,31 +12,22 @@ document.addEventListener("DOMContentLoaded", () => {
         distance: 120,
         color: "#777",
         opacity: 0.6,
-        width: 1,
+        width: 1
       },
-      move: {
-        enable: true,
-        speed: 0.25,
-      },
+      move: { enable: true, speed: 0.25 }
     },
     interactivity: {
       detect_on: "canvas",
-      events: {
-        onhover: { enable: false },
-      },
+      events: { onhover: { enable: false } }
     },
-    retina_detect: true,
+    retina_detect: true
   });
 
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
+  // Hamburger toggle
   const hamburger = document.querySelector(".hamburger");
-  const navLinks = document.querySelector("nav ul");
+  const navLinks = document.getElementById("nav-links");
 
   hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("show");
   });
-});
-</script>
-
 });
