@@ -13,6 +13,45 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Hamburger styles for mobile */
+        .hamburger {
+            display: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+        }
+
+        /* Mobile Menu Hidden by Default */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                background: rgba(0, 0, 0, 0.9);
+                padding: 15px;
+                border-radius: 8px;
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            .hamburger {
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Particle Background -->
@@ -21,8 +60,11 @@
     <!-- Header -->
     <header>
         <h1>My Portfolio</h1>
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
         <nav>
-            <ul>
+            <ul id="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -35,7 +77,7 @@
 
     <!-- Hero Section -->
     <section id="hero" data-aos="fade-up">
-        <h1>Hello, I am Preet</h1>
+        <h1>HELLO, I AM PREET</h1>
         <p>A passionate developer building impactful web applications.</p>
     </section>
 
@@ -55,13 +97,14 @@
     </section>
 
     <!-- Resume Section -->
-            <section id="resume" data-aos="fade-up">
-                <div class="section-box">
-                    <h2>Resume</h2>
-                    <p>View my resume for detailed information about my skills and experience.</p>
-                    <a href="files/PreetKothadiaResume.pdf" class="btn" target="_blank">View Resume</a>
-                </div>
-            </section>
+    <section id="resume" data-aos="fade-up">
+        <div class="section-box">
+            <h2>Resume</h2>
+            <p>Download my resume for detailed information about my skills and experience.</p>
+            <a href="path-to-your-resume.pdf" class="btn" target="_blank">View Resume</a>
+        </div>
+    </section>
+
     <!-- Skills Section -->
     <section id="skills" data-aos="fade-up">
         <div class="section-box">
@@ -77,7 +120,7 @@
         </div>
     </section>
 
-    <!-- Projects Section (Empty Placeholder) -->
+    <!-- Projects Section -->
     <section id="projects" data-aos="fade-up">
         <div class="section-box">
             <h2>Projects</h2>
@@ -85,24 +128,26 @@
         </div>
     </section>
 
-    <!-- Certifications & Education (Shared Background) -->
+    <!-- Certifications & Education -->
     <section id="certifications-education" data-aos="fade-up">
         <div class="section-box shared-box">
             <div class="two-column">
-                <!-- Certifications -->
                 <div class="certifications">
                     <h2>Certifications</h2>
                     <div class="cert-card">
-                        <h3>Python Bootcamp</h3>
-                        <p>Coursera - 2025</p>
+                        <h3>Data Science Specialization</h3>
+                        <p>Coursera - 2024</p>
                     </div>
                     <div class="cert-card">
-                        <h3>Data Visualization</h3>
-                        <p>FreeCodeCamp - 2025</p>
+                        <h3>Machine Learning</h3>
+                        <p>Stanford University (Online) - 2023</p>
+                    </div>
+                    <div class="cert-card">
+                        <h3>Web Development Bootcamp</h3>
+                        <p>Udemy - 2022</p>
                     </div>
                 </div>
 
-                <!-- Education -->
                 <div class="education">
                     <h2>Education</h2>
                     <div class="edu-card">
@@ -118,27 +163,23 @@
         </div>
     </section>
 
-    <!-- Get in Touch Section -->
+    <!-- Get in Touch -->
     <section id="get-in-touch" data-aos="fade-up">
         <div class="section-box">
             <h2>Get in Touch</h2>
             <p>Have a project in mind or just want to say hi? I'd love to hear from you.</p>
             <div class="social-icons">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=preetkothadia111@gmail.com" target="_blank" class="social-icon">
-                <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/preet-kothadia-3089a4342/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/okpreet" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="mailto:preetkothadia111@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/your-github-username" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-         <p>"Code is like humor. When you have to explain it, it’s bad."</p>
-         <p>📍 Based in Ahmedabad, India | Open to Remote/On-site Opportunities</p>
+        <p>© 2025 My Portfolio. All rights reserved.</p>
     </footer>
-
 
     <!-- AOS Script -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
@@ -164,6 +205,16 @@
           },
           "interactivity": { "events": { "onhover": { "enable": false } } },
           "retina_detect": true
+        });
+    </script>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
         });
     </script>
 </body>

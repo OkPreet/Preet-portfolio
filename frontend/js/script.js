@@ -1,3 +1,4 @@
+// Line Animation Script
 const canvas = document.getElementById("line-animation");
 const ctx = canvas.getContext("2d");
 
@@ -5,7 +6,6 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 let lines = [];
-
 for (let i = 0; i < 60; i++) {
     lines.push({
         x: Math.random() * canvas.width,
@@ -42,10 +42,17 @@ function animate() {
 
     requestAnimationFrame(animate);
 }
-
 animate();
 
 window.addEventListener("resize", () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+});
+
+// Mobile hamburger menu
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
 });
