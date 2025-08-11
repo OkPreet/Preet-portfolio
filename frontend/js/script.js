@@ -5,8 +5,9 @@ AOS.init({
   offset: 100,
 });
 
-// Initialize Particles.js when DOM is ready
+// Initialize Particles.js and set up hamburger toggle after DOM content is loaded
 document.addEventListener("DOMContentLoaded", () => {
+  // Initialize particles.js
   particlesJS("particles-js", {
     particles: {
       number: { value: 60, density: { enable: true, value_area: 800 } },
@@ -34,11 +35,12 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     retina_detect: true,
   });
-});
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.getElementById("nav-links");
 
-    hamburger.addEventListener("click", () => {
+  // Hamburger toggle functionality
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("show");
+  });
 });
-
