@@ -29,11 +29,15 @@ document.addEventListener("DOMContentLoaded", () => {
     retina_detect: true,
   });
 
-  // Hamburger toggle functionality
-  const hamburger = document.getElementById("hamburger");
-  const navLinks = document.getElementById("nav-links");
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector("nav ul");
 
   hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("show");
   });
+});
+</script>
+
 });

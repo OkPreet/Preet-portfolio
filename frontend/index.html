@@ -15,29 +15,42 @@
   <link rel="stylesheet" href="css/style.css" />
 
   <style>
-    /* Hamburger styles for mobile */
-    .hamburger {
-      display: none;
-      font-size: 1.8rem;
-      cursor: pointer;
-      background: none;
-      border: none;
-      color: white;
+    /* Base nav styles */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
     }
 
     nav ul {
       display: flex;
       gap: 15px;
       list-style: none;
+      margin: 0;
+      padding: 0;
     }
 
-    /* Mobile Menu Hidden by Default */
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    /* Hamburger styles */
+    .hamburger {
+      display: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: #00e0ff;
+    }
+
+    /* Mobile menu hidden by default */
     @media (max-width: 768px) {
-      header nav {
-        display: block;
-        width: 100%;
-        background: rgba(45, 45, 45, 0.95);
-        padding: 1rem 0;
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
         position: relative;
       }
 
@@ -46,7 +59,7 @@
         flex-direction: column;
         position: absolute;
         top: 60px;
-        right: 20px;
+        right: 0;
         background: rgba(0, 0, 0, 0.9);
         padding: 15px;
         border-radius: 8px;
@@ -59,14 +72,6 @@
 
       .hamburger {
         display: block;
-        color: #00e0ff;
-      }
-    }
-
-    /* Hide hamburger on desktop */
-    @media (min-width: 769px) {
-      .hamburger {
-        display: none;
       }
     }
   </style>
@@ -78,10 +83,10 @@
   <!-- Header -->
   <header>
     <h1>My Portfolio</h1>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-      <i class="fas fa-bars"></i>
-    </button>
     <nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
       <ul id="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#resume">Resume</a></li>
@@ -107,12 +112,7 @@
         Hi there! I'm a third-year IT student with a passion for turning complex
         ideas into functional, impactful solutions. My toolkit spans machine
         learning, data science, and web development, allowing me to handle
-        projects from data analysis to deployment. I thrive on the creative
-        challenge of building systems that not only solve problems but also
-        delight users. Whether I'm building a predictive model or designing a
-        clean web interface, my goal is always the same: to create something
-        that matters. I'm always looking for my next challenge and am eager to
-        collaborate on projects that make a real difference in the world.
+        projects from data analysis to deployment.
       </p>
     </div>
   </section>
@@ -122,9 +122,7 @@
     <div class="section-box">
       <h2>Resume</h2>
       <p>Download my resume for detailed information about my skills and experience.</p>
-      <a href="path-to-your-resume.pdf" class="btn" target="_blank" rel="noopener"
-        >View Resume</a
-      >
+      <a href="path-to-your-resume.pdf" class="btn" target="_blank" rel="noopener">View Resume</a>
     </div>
   </section>
 
@@ -165,10 +163,6 @@
             <h3>Machine Learning</h3>
             <p>Stanford University (Online) - 2023</p>
           </div>
-          <div class="cert-card">
-            <h3>Web Development Bootcamp</h3>
-            <p>Udemy - 2022</p>
-          </div>
         </div>
 
         <div class="education">
@@ -192,23 +186,9 @@
       <h2>Get in Touch</h2>
       <p>Have a project in mind or just want to say hi? I'd love to hear from you.</p>
       <div class="social-icons">
-        <a href="mailto:preetkothadia111@gmail.com" class="social-icon"
-          ><i class="fas fa-envelope"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/your-linkedin-profile"
-          target="_blank"
-          class="social-icon"
-          rel="noopener"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a
-          href="https://github.com/your-github-username"
-          target="_blank"
-          class="social-icon"
-          rel="noopener"
-          ><i class="fab fa-github"></i
-        ></a>
+        <a href="mailto:preetkothadia111@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" class="social-icon" rel="noopener"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/your-github-username" target="_blank" class="social-icon" rel="noopener"><i class="fab fa-github"></i></a>
       </div>
     </div>
   </section>
@@ -219,7 +199,7 @@
     <p>📍 Based in Ahmedabad, India | Open to Remote Opportunities</p>
   </footer>
 
-  <!-- Scripts at end of body for better loading -->
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
   <script src="script.js"></script>
 </body>
