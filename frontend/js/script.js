@@ -1,10 +1,3 @@
-// Initialize AOS (Animate On Scroll)
-AOS.init({
-  duration: 1000,
-  once: true,
-  offset: 100,
-});
-
 // Initialize Particles.js and set up hamburger toggle after DOM content is loaded
 document.addEventListener("DOMContentLoaded", () => {
   // Initialize particles.js
