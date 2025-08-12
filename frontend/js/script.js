@@ -25,9 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Hamburger toggle
   const hamburger = document.querySelector(".hamburger");
-  const navLinks = document.getElementById("nav-links");
-
+  const mobile_nav = document.getElementById("mobile-nav-links")
   hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
+    mobile_nav.classList.toggle('show')
   });
 });

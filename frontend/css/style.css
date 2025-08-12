@@ -3,271 +3,284 @@
 ================================ */
 html,
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #0d0d0d; /* Black main background */
-  color: #fff;
-  line-height: 1.7;
-  overflow-x: hidden;
-  font-size: 1.05rem;
-  max-width: 100%;
-  height: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    /* Black main background */
+    color: #fff;
+    line-height: 1.7;
+    overflow-x: hidden;
+    font-size: 1.05rem;
+    max-width: 100%;
+    height: 100%;
 }
 
 /* Particle Background Layer */
 #particles-js {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1; /* behind content */
-  background-color: transparent;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* behind content */
+    background-color: transparent;
 }
 
 /* ================================
     Header
 ================================ */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: rgba(45, 45, 45, 0.85);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(45, 45, 45, 0.85);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    flex-wrap: wrap;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #00e0ff;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00e0ff;
 }
 
 header nav ul {
-  gap: 1.5rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  flex-wrap: wrap;
-  justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 header nav ul li a {
-  color: #00e0ff;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+    color: #00e0ff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 /* ================================
     Section Wrapper
 ================================ */
 section {
-  padding: 5rem 2rem;
-  display: flex;
-  justify-content: center;
+    padding: 5rem 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 .section-box {
-  background: rgba(50, 50, 50, 0.85);
-  padding: 2rem;
-  border-radius: 12px;
-  max-width: 900px;
-  width: 100%;
-  text-align: center;
+    background: rgba(50, 50, 50, 0.85);
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
 }
 
-section + section {
-  margin-top: 2rem;
+section+section {
+    margin-top: 2rem;
 }
 
 h2 {
-  color: #00e0ff;
-  margin-bottom: 1rem;
-  font-size: 2.4rem;
-  letter-spacing: 1px;
+    color: #00e0ff;
+    margin-bottom: 1rem;
+    font-size: 2.4rem;
+    letter-spacing: 1px;
 }
 
 /* ================================
     Hero Section
 ================================ */
 #hero {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 8rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8rem;
 }
 
 #hero h1 {
-  margin-bottom: 0.5rem;
-  font-size: 3rem;
-  font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 #hero p {
-  font-size: 1.3rem;
-  margin-top: 0.5rem;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
 }
 
 /* ================================
     About Section
 ================================ */
 #about p {
-  text-align: justify;
-  font-size: 1.1rem;
+    text-align: justify;
+    font-size: 1.1rem;
 }
 
 /* ================================
     Resume Button
 ================================ */
 .btn {
-  display: inline-block;
-  padding: 0.8rem 1.8rem;
-  margin-top: 1rem;
-  background-color: #ff6a00;
-  color: #fff;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease;
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    margin-top: 1rem;
+    background-color: #ff6a00;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #e65c00;
+    background-color: #e65c00;
 }
 
 /* ================================
     Skills
 ================================ */
 .skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
 }
 
 .skill-tag {
-  background-color: rgba(80, 80, 80, 0.85);
-  padding: 0.6rem 1.2rem;
-  border-radius: 20px;
-  font-size: 1rem;
-  font-weight: 500;
+    background-color: rgba(80, 80, 80, 0.85);
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 /* ================================
     Certifications & Education
 ================================ */
 .shared-box {
-  background: rgba(50, 50, 50, 0.85);
-  padding: 2rem;
-  border-radius: 12px;
-  max-width: 1100px;
-  width: 100%;
+    background: rgba(50, 50, 50, 0.85);
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 1100px;
+    width: 100%;
 }
 
 .two-column {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.two-column > div {
-  flex: 1;
-  min-width: 300px;
-  text-align: center;
+.two-column>div {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
 }
 
 .cert-card,
 .edu-card {
-  background-color: rgba(70, 70, 70, 0.85);
-  padding: 1rem;
-  border-radius: 10px;
-  margin: 0.5rem 0;
-  font-size: 1rem;
+    background-color: rgba(70, 70, 70, 0.85);
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 0.5rem 0;
+    font-size: 1rem;
 }
 
 /* ================================
     Get in Touch Section
 ================================ */
 #get-in-touch p {
-  margin-bottom: 1rem;
-  text-align: center;
-  font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
 }
 
 .social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
 }
 
 .social-icon {
-  font-size: 2rem;
-  color: #fff;
-  transition: transform 0.3s ease, color 0.3s ease;
+    font-size: 2rem;
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-icon:hover {
-  transform: scale(1.1);
-  color: #ff6a00;
+    transform: scale(1.1);
+    color: #ff6a00;
 }
-
+.hamburger{
+    display: none;
+}
+.mobile-nav{
+    display: none;
+}
 /* ================================
     Footer
 ================================ */
 footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: rgba(45, 45, 45, 0.85);
-  font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(45, 45, 45, 0.85);
+    font-size: 1rem;
 }
 
 /* ================================
     Mobile Responsive Design
 ================================ */
 @media (max-width: 768px) {
-  nav ul {
-    display: none; /* Hide nav links initially */
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background: rgba(0, 0, 0, 0.9);
-    padding: 15px;
-    border-radius: 8px;
-    z-index: 1001;
-  }
+    .mobile-nav{
+        width: 100%;
+        display: block;
+    }
+    
+    .mobile-nav ul {
+        display: none;
+        /* Hide nav links initially */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 15px;
+        border-radius: 8px;
+        z-index: 1001;
+    }
 
-  nav ul.show {
-    display: flex; /* Show nav links when .show class is added */
-  }
+    .mobile-nav ul.show {
+        display: block;
+    }
 
-  .hamburger {
-    display: block;
-    cursor: pointer;
-    font-size: 1.8rem;
-    background: none;
-    border: none;
-    color: #00e0ff;
-  }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 1.8rem;
+        background: none;
+        border: none;
+        color: #00e0ff;
+    }
 }
 
 /* Hide hamburger on desktop */
 @media (min-width: 769px) {
-  .hamburger {
-    display: none;
+    .hamburger {
+        display: none;
+    }
   }
-}
